@@ -12,9 +12,12 @@ h1 {
   font-size: 1.75em;
 }
 
-section {
-  position: relative;
+.menu-item {
   float: left;
+  margin: 0;
+}
+
+section {
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
@@ -31,15 +34,15 @@ section > h2 {
   font-size: 1.25em;
 }
 
-section:nth-child(1) > h2 {
+.menu-item:nth-child(1) > section > h2 {
   background-color: plum;
 }
 
-section:nth-child(2) > h2 {
+.menu-item:nth-child(2) > section > h2 {
   background-color: brown;
 }
 
-section:nth-child(3) > h2 {
+.menu-item:nth-child(3) > section > h2 {
   background-color: bisque;
 }
 
@@ -50,22 +53,22 @@ section > p {
 /* media tag */
 /* desktop view */
 @media (min-width: 992px) {
-  section {
-    width: 31%;
+  .menu-item {
+    width: 33.33%;
   }
 }
 /* tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
-  section {
+  .menu-item {
     width: 50%;
   }
-  section:nth-child(odd):last-child {
+  .menu-item:nth-child(odd):last-child {
     width: 100%;
   }
 }
 /* mobile view */
 @media (max-width: 767px) {
-  section {
+  .menu-item {
     width: 100%;
   }
 }
