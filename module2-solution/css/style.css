@@ -18,20 +18,22 @@ h1 {
 }
 
 section {
+  position: relative;
   border: 1px solid black;
-  padding: 10px;
   margin: 10px;
-  background-color: gray;
+  background-color: lightgray;
 }
 
 section > h2 {
-  float: right;
-  width: 150px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 120px;
   border: 1px solid black;
   text-align: center;
-  margin-top: -11px;
-  margin-right: -11px;
   font-size: 1.25em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu-item:nth-child(1) > section > h2 {
@@ -40,6 +42,7 @@ section > h2 {
 
 .menu-item:nth-child(2) > section > h2 {
   background-color: brown;
+  color: white;
 }
 
 .menu-item:nth-child(3) > section > h2 {
@@ -47,7 +50,8 @@ section > h2 {
 }
 
 section > p {
-  clear: right;
+  margin: 0;
+  padding: 35px 10px 10px 10px;
 }
 
 /* media tag */
